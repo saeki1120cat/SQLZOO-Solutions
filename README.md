@@ -147,8 +147,7 @@ The capital of Sweden is Stockholm. Both words start with the letter 'S'.
   FROM world
   WHERE name LIKE 'A%' or name LIKE 'B%';
 ```
-13.
-Put the continents right...
+13. Put the continents right...
 * Oceania becomes Australasia
 * Countries in Eurasia and Turkey go to Europe/Asia
 * Caribbean islands starting with 'B' go to North America, other Caribbean islands go to South America
@@ -162,3 +161,17 @@ Put the continents right...
   FROM world
   ORDER BY name;
 ```
+### SELECT from NOBEL [(ENGLISH 1-13)](https://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial)
+1. Change the query shown so that it displays Nobel prizes for 1950.
+```sql
+  SELECT yr, subject, winner
+  FROM nobel
+  WHERE yr = 1950;
+```
+2. Show who won the 1962 prize for Literature.
+```sql
+  SELECT winner
+  FROM nobel
+  WHERE yr = 1962 AND subject = 'Literature';
+```
+
