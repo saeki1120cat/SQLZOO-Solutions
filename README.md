@@ -1,5 +1,12 @@
 ## SQLZOO_Solutions
 
+## Sections:
+1. [SELECT basics](#select-basics)
+2. [SELECT from WORLD](#select-from-world)
+3. [SELECT from NOBEL](#select-from-nobel)
+4. [SELECT within SELECT Tutorial](#select-within-select-tutorial)
+
+## SELECT basics
 ### SELECT basics [(ENGLISH 1-3)](https://sqlzoo.net/wiki/SELECT_basics)
 1. The example uses a WHERE clause to show the population of 'France'. Note that strings (pieces of text that are data) should be in 'single quotes';
 * Modify it to show the population of Germany
@@ -31,6 +38,7 @@
   FROM world
   WHERE area > 5000000;
 ```
+## SELECT from WORLD
 ### SELECT from WORLD [(ENGLISH 1-13)](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)
 1. Read the notes about this table. Observe the result of running this SQL command to show the name, continent and population of all countries.
 ```sql
@@ -130,7 +138,7 @@ The capital of Sweden is Stockholm. Both words start with the letter 'S'.
   AND name LIKE '%u%'
   AND name NOT LIKE '% %';
 ```
-### SELECT basics [(CHINESE 11-13)](https://sqlzoo.net/wiki/SQLZOO:SELECT_from_WORLD_Tutorial/zh)
+### SELECT from WORLD [(CHINESE 11-13)](https://sqlzoo.net/wiki/SQLZOO:SELECT_from_WORLD_Tutorial/zh)
 11. The CASE statement shown is used to substitute North America for Caribbean in the third column.
 * Show the name - but substitute Australasia for Oceania - for countries beginning with N.
 ```sql
@@ -161,6 +169,7 @@ The capital of Sweden is Stockholm. Both words start with the letter 'S'.
   FROM world
   ORDER BY name;
 ```
+## SELECT from NOBEL
 ### SELECT from NOBEL [(ENGLISH 1-13)](https://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial)
 1. Change the query shown so that it displays Nobel prizes for 1950.
 ```sql
@@ -254,6 +263,7 @@ The capital of Sweden is Stockholm. Both words start with the letter 'S'.
   ORDER BY
   CASE WHEN subject IN ('Physics','Chemistry') THEN 1 ELSE 0 END, subject, winner;
 ```
+## SELECT within SELECT Tutorial
 ### SELECT within SELECT Tutorial [(ENGLISH 1-10)](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)
 
 1. List each country name where the population is larger than 'Russia'.
