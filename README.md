@@ -1,4 +1,4 @@
-## SQLZOO_Solutions
+## SQLZOO-Solutions
 
 ## Sections:
 1. [SELECT basics](#select-basics)
